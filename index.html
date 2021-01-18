@@ -11,21 +11,20 @@
   <title>Frontend Mentor | Easybank landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  
 </head>
 <body>
 
   <header class="header">
+
+    <div class="overlay has-fade"></div>
 
     <nav class="flex flex-jc-sb flex-ai-c">
       <a href="/" class="header__logo">
         <img src="./images/logo.svg" alt="Easybank">
       </a>
 
-      <a href="#" class="header__menu hide-for-desktop">
+      <a href="#" id ="btnHamburger" class="header__toggle hide-for-desktop open">
         <span></span>
         <span></span>
         <span></span>
@@ -41,20 +40,19 @@
 
       <a href="#" class="button header__cta hide-for-mobile">Request Invite</a>
       
+      <div class="header__menu has-fade">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Blog</a>
+        <a href="#">Careers</a>
+      </div>
+
     </nav>
   </header>
-<!-- 
-  Home
-  About
-  Contact
-  Blog
-  Careers
-
-  Request Invite
 
 
-
-  Next generation digital banking
+  <!-- Next generation digital banking
 
   Take your financial life online. Your Easybank account will be a one-stop-shop 
   for spending, saving, budgeting, investing, and much more.

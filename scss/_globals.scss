@@ -17,6 +17,10 @@ body {
     color: $grayishBlue;
     font-family: 'Public Sans',sans-serif;
     line-height: 1.3;
+
+    &.nosroll {
+        overflow: hidden;
+    }
 }
 
 // Flex box
