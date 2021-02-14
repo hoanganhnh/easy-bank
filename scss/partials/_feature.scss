@@ -1,0 +1,74 @@
+
+.feature {
+    background-color: $lightGrayishBlue;
+    
+    &__item {
+        font-size: 1.25rem;
+        font-weight: 300;
+        line-height: 1.15;
+        color: $darkBlue;
+        margin-bottom: 1rem;
+    
+        @include breakpoint-up(large){
+          font-size: 1.5rem;
+          margin-bottom: 1.5rem;
+        }
+
+        &--icon {
+            margin-bottom: 1.875rem;
+
+            @include breakpoint-up(large){
+                margin-bottom: 2.75rem;
+            }
+            
+        }
+
+        &--heading {
+            font-size: 1.25rem;
+            font-weight: 300;
+            line-height: 1.15;
+            color: $darkBlue;
+            margin-bottom: 1rem;
+
+            @include breakpoint-up(large){
+                font-size: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        &--info {
+            font-size: 0.875rem;
+            line-height: 1.6;
+        }
+    }
+
+}
+
+@include breakpoint-down(medium) {
+    .feature {
+        h2, p {
+            text-align: center;
+        }
+
+        &__item {
+            &--icon {
+                display: flex;
+                justify-content: center;
+
+                img {
+                    display: block;
+                }
+            }
+
+            &--heading {
+                text-align: center;
+            }
+
+            &--info {
+                font-size: 1rem;
+                line-height: 1.6;
+                text-align: center;
+            }
+        }
+    }
+}

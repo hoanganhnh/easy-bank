@@ -1,6 +1,10 @@
 @import 'globals';
 @import 'variables';
-@import 'header';
+@import './partials/header';
 @import 'buttons';
 @import 'mixins';
 @import 'animations';
+@import './partials/hero';
+@import './partials/feature';
+@import './partials/article';
+@import './partials/footer';    
