@@ -23,3 +23,12 @@ btnHamburger.addEventListener('click',function() {
         });
     }
 });
+
+document.onscroll = function() {
+    const processBar = document.querySelector('.progress-bar')
+    const scrollTop = window.scrollY || document.documentElement.scrollTop
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight
+    console.log(document.documentElement.clientHeight)
+
+    processBar.style.width = scrollTop > 0 ? (scrollTop/height * 100) + '%' : 0
+}
