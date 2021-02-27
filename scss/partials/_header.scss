@@ -28,7 +28,8 @@
         height: 2px;
 
         .progress-bar {
-            background-color: $limeGreen;
+            background: linear-gradient(to right, $limeGreen, $brightCyan);
+                // background-color: $limeGreen; 
             width: 0%;
             display: block;
             height: inherit;
