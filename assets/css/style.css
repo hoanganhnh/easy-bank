@@ -98,6 +98,15 @@ p {
   line-height: 1.5;
   margin-bottom: 2.25rem; }
 
+body::-webkit-scrollbar {
+  width: .5rem; }
+
+body::-webkit-scrollbar-track {
+  background: #fff; }
+
+body::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to right, #31d35c, #2bb7da); }
+
 .header {
   position: fixed;
   background-color: #fff;
