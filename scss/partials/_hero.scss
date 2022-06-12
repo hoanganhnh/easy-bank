@@ -16,7 +16,7 @@
     }
     &__image {
         position: relative;
-        background-image: url('/images/bg-intro-mobile.svg');
+        background-image: url('./images/bg-intro-mobile.svg');
         @include size-img ;
         min-height: 17.5rem;
 
